@@ -1,5 +1,7 @@
 const putul = ['Putul', 'Nurun', 'Nahar'];
 
+const putuls = new Array(10000).fill('Putul')
+
 const findPutul = (pArray) => {
   let t0 = performance.now();
   for (let i = 0; i < pArray.length; i++) {
@@ -11,4 +13,5 @@ const findPutul = (pArray) => {
   console.log(`Call to findPutul took ${t1 - t0} milliseconds`);
 }
 
-findPutul(putul);
+// findPutul(putul);
+findPutul(putuls);
